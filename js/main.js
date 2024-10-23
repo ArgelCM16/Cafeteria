@@ -71,7 +71,7 @@
 // js/main.js
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/js/service-worker.js') // asegúrate de poner la ruta correcta
+      navigator.serviceWorker.register('./js/service-worker.js') // asegúrate de poner la ruta correcta
         .then(function(registration) {
           console.log('Service Worker registrado con éxito:', registration.scope);
         }, function(error) {
