@@ -49,7 +49,7 @@
                         <a href="testimonial.html" class="nav-item nav-link">Testimonios</a>
                        
                     <a href="contact.html" class="nav-item nav-link ">Contacto</a>
-                    <a href="contact.html" class="nav-item nav-link ">Empleados</a>
+                    <a href="login.html" class="nav-item nav-link ">Empleados</a>
 
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Siempre Con Sabor</h2>
                         <h1 class="display-1 text-white m-0">CAFÉ</h1>
-                        <h2 class="text-white m-0">* SINCE 1950 *</h2>
+                        <h2 class="text-white m-0">* Desde 2024 *</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -75,7 +75,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2 class="text-primary font-weight-medium m-0">Siempre Con Sabor</h2>
                         <h1 class="display-1 text-white m-0">CAFÉ</h1>
-                        <h2 class="text-white m-0">* SINCE 1950 *</h2>
+                        <h2 class="text-white m-0">* Desde 2024 *</h2>
                     </div>
                 </div>
             </div>
@@ -278,6 +278,7 @@
 <!-- Menu End -->
 
 <!-- Reservation Start -->
+<!-- Reservation Start -->
 <div class="container-fluid my-5">
     <div class="container">
         <div class="reservation position-relative overlay-top overlay-bottom">
@@ -301,7 +302,7 @@
                 <div class="col-lg-6">
                     <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
                         <h1 class="text-white mb-4 mt-5">Reserva Tu Mesa</h1>
-                        <form class="mb-5">
+                        <form id="reservationForm" class="mb-5">
                             <div class="form-group">
                                 <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
                                     required="required" />
@@ -321,13 +322,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
-                                    <option selected>Personas</option>
-                                    <option value="1">1 Persona</option>
-                                    <option value="2">2 Personas</option>
-                                    <option value="3">3 Personas</option>
-                                    <option value="4">4 Personas</option>
-                                </select>
+                                <input type="number" id="people" class="form-control bg-transparent border-primary p-4" placeholder="People"
+                                    required="required" />
                             </div>
                             
                             <div>
@@ -340,6 +336,7 @@
         </div>
     </div>
 </div>
+<!-- Reservation End -->
 <!-- Reservation End -->
 
 
@@ -464,6 +461,7 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
+     <script src="./js/reservas.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

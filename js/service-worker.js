@@ -8,6 +8,7 @@ const urlsToCache = [
   '/menu.html',
   '/service.html',
   '/contact.html',
+  '/login.html',
   '/css/styles.css', // agrega tu archivo CSS aquí
   '/js/main.js',     // agrega tu archivo JS principal
   '/img/logo.png',   // imágenes o íconos que quieras cachear
@@ -33,3 +34,16 @@ self.addEventListener('fetch', event => {
       })
   );
 });
+
+self.addEventListener('push', function(event) {
+  const data = event.data.json();
+  const options = {
+      body: data.body,
+      icon: '/path-to-icon/icon.png',
+  };
+  event.waitUntil(
+      self.registration.showNotification(data.title, options)
+  );
+});
+
+
